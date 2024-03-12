@@ -1,25 +1,27 @@
 package com.BusReservationProject.payload;
 
-import com.BusReservationProject.entity.Driver;
 import lombok.Data;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class BusDto {
 
-    private Long busId;
     private String busNumber;
+
     private String busType;
-    private String fromLocation;
-    private String toLocation;
-    private String fromDate;
-    private String toDate;
-    private String totalDuration;
-    private String fromTime;
-    private String toTime;
+
     private double price;
+
     private int totalSeats;
+
     private int availableSeats;
-    private Driver driver;
+
 }
+
+
