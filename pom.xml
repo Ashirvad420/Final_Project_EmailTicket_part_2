@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.3</version>
+		<version>2.7.17</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.BusReservationProject</groupId>
@@ -14,13 +14,36 @@
 	<name>BusReservation</name>
 	<description>Demo project for BusReservation</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
+		<!--Gmail dependency-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+
+		<!--itext Pdf Dependency-->
+		<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.5.13.3</version>
+		</dependency>
+
+	<!-- XL  Poi dependency -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

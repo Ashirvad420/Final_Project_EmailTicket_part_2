@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface RouteRepository extends JpaRepository<Route,Long> {
     Route findByBusId(long busId); // this will return a route object
+
+    List<Route> findByFromLocationAndToLocationAndFromDate(String fromLocation, String toLocation, String fromDate);
 }

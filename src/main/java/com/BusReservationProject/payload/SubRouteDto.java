@@ -1,6 +1,6 @@
 package com.BusReservationProject.payload;
 
-import jakarta.persistence.Column;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,5 +26,9 @@ public class SubRouteDto {
 
     @Column(name = "route_id", nullable = false)
     private long routeId;
+
+    private long busId;
+
+
 
 }

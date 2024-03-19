@@ -1,6 +1,8 @@
 package com.BusReservationProject.service;
 import com.BusReservationProject.payload.BusDto;
-import jakarta.transaction.Transactional;
+import javax.persistence.*;
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.BusReservationProject.entity.Bus;
